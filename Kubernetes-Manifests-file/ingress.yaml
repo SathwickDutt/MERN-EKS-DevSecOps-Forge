@@ -10,7 +10,8 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - http:
+    - host: epicreads-sathwick.xyz   # 👈 ADD THIS
+      http:
         paths:
           - path: /api
             pathType: Prefix
